@@ -1,20 +1,16 @@
 {
-  "name": "shoping-app",
+  "name": "shopping-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set NODE_ENV=dev&& node app.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "echo \"No build step required for Express app\""
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
-    "config": "^3.3.12",
     "cookie-parser": "^1.4.6",
-    "debug": "^4.3.5",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
@@ -22,8 +18,12 @@
     "moment": "^2.30.1",
     "mongoose": "^8.5.1",
     "multer": "^1.4.5-lts.1",
-    "node": "^20.16.0",
-    "nodemon": "^3.1.4",
-    "path": "^0.12.7"
-  }
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=16.x"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
